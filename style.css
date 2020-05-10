@@ -63,6 +63,38 @@ figure {
 
 }
 
+.arrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow img {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* /////////////////////////////////////////////////////////// */
+
 .add {
     margin-bottom: 30px;
 }

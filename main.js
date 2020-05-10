@@ -49,12 +49,61 @@ sendBtn.addEventListener('click', addNewReview)
 
 ////////////////////////////////////////////////////////////////
 
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
 
-const lastNumber = arr.length
+const prev = () => {
+
+    if (lastNumber === 0) {
+        lastNumber = arr.length - 1
+        nickname.innerHTML = (arr[lastNumber].name);
+        opinion.innerHTML = (arr[lastNumber].review);
+    } else {
+        lastNumber--;
+        nickname.innerHTML = (arr[lastNumber].name);
+        opinion.innerHTML = (arr[lastNumber].review);
+
+    }
+}
+
+const next = () => {
+    if (lastNumber === arr.length - 1) {
+        lastNumber = 0
+        nickname.innerHTML = (arr[lastNumber].name);
+        opinion.innerHTML = (arr[lastNumber].review);
+    } else {
+        lastNumber++;
+        nickname.innerHTML = (arr[lastNumber].name);
+        opinion.innerHTML = (arr[lastNumber].review);
+
+    }
+}
+// const arrows = document.querySelectorAll('.arrow')
+
+// const handleArrows = (e) => {
+//     if (e.target.classList.contains('left')) {
+//         console.log('left')
+//     } else {
+//         console.log('right')
+//     }
+//     // console.log('dfsf')
+// }
+
+
+// arrows.forEach = (arrow) => {
+//     arrow.addEventListener('click', handleArrows(e))
+// }
+left.addEventListener('click', prev)
+right.addEventListener('click', next)
+
+///////////////////////////////////////////////////////////////
+
+
+let lastNumber = arr.length - 1
 
 const lastReview = () => {
-    nickname.innerHTML = (arr[lastNumber - 1].name)
-    opinion.innerHTML = (arr[lastNumber - 1].review)
+    nickname.innerHTML = (arr[lastNumber].name)
+    opinion.innerHTML = (arr[lastNumber].review)
 }
 
 
