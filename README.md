@@ -1,7 +1,7 @@
 # view-and-add-review-project
 
 ## General info
-This project is simple landing page. 
+This project is simple app to add comments/rewievs and display them. 
 * [Check this app live](https://macrapacki.github.io/view-and-add-review-project/)
 	
 ## Technologies
