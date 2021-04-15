@@ -1,14 +1,12 @@
 # view-and-add-review-project
-https://macrapacki.github.io/view-and-add-review-project/
-# Landing-Page
 
 ## General info
 This project is simple landing page. 
-* [Check this app live](https://macrapacki.github.io/Landing-Page/)
+* [Check this app live](https://macrapacki.github.io/view-and-add-review-project/)
 	
 ## Technologies
 - HTML
-- CSS, SCSS
+- CSS
 - Vanilla JS
 	
 ## Setup
